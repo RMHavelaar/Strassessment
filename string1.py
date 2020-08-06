@@ -28,8 +28,10 @@ __author__ = "Robert Havelaar"
 
 
 def donuts(count):
-    # your code here
-    return
+    if count < 10:
+        return f'Number of donuts: {count}'
+    else:
+        return 'Number of donuts: many'
 
 
 # B. both_ends

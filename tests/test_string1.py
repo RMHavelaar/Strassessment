@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Unit tests for string1
-
 Students should not modify this file.
 """
 
@@ -32,11 +31,6 @@ class TestString1(unittest.TestCase):
         self.assertEqual(donuts(9), 'Number of donuts: 9')
         self.assertEqual(donuts(10), 'Number of donuts: many')
         self.assertEqual(donuts(99), 'Number of donuts: many')
-
-
-
-
-        
 
     def test_both_ends(self):
         """Check if both_ends function is working"""

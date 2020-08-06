@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Robert Havelaar"
+__author__ = "???"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -12,7 +12,7 @@ __author__ = "Robert Havelaar"
 
 # Instructions:
 # Complete each of these string exercises in the same way as the
-# previous String1 exercises.
+# previous String1 excercises.
 
 # D. verbing
 # Given a string, if its length is at least 3, add 'ing' to its
@@ -22,9 +22,9 @@ __author__ = "Robert Havelaar"
 # Return the resulting string.
 
 
-def verbing(count):
-    message = 'Number of donuts:' + str (count)
-    return message
+def verbing(s):
+    # your code here
+    return
 
 
 # E. not_bad

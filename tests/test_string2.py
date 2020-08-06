@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Unit tests for string2
-
 Students should not modify this file.
 """
 
