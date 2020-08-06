@@ -12,7 +12,7 @@ __author__ = "Robert Havelaar"
 
 # Instructions:
 # Complete each of these string exercises in the same way as the
-# previous String1 excercises.
+# previous String1 exercises.
 
 # D. verbing
 # Given a string, if its length is at least 3, add 'ing' to its
@@ -22,9 +22,9 @@ __author__ = "Robert Havelaar"
 # Return the resulting string.
 
 
-def verbing(s):
-    # your code here
-    return
+def verbing(count):
+    message = 'Number of donuts:' + str (count)
+    return message
 
 
 # E. not_bad

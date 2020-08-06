@@ -33,6 +33,8 @@ class TestString1(unittest.TestCase):
         self.assertEqual(donuts(10), 'Number of donuts: many')
         self.assertEqual(donuts(99), 'Number of donuts: many')
 
+        
+
     def test_both_ends(self):
         """Check if both_ends function is working"""
         both_ends = self.module.both_ends
