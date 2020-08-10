@@ -4,15 +4,14 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Robert Havelaar"
-
+__author__ = "Robert Havelaar, with help from demos,(especially the notebooks)"
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
 
 # Instructions:
 # Complete each of these string exercises in the same way as the
-# previous String1 exercises.
+# previous String1 excercises.
 
 # D. verbing
 # Given a string, if its length is at least 3, add 'ing' to its
@@ -22,9 +21,14 @@ __author__ = "Robert Havelaar"
 # Return the resulting string.
 
 
-def verbing(count):
-    message = 'Number of donuts:' + str (count)
-    return message
+def verbing(s):
+    if len(s) >= 3:
+        if s[-3:] == "ing":
+            return s + "ly"
+        else:
+            return s + "ing"
+    else:
+        return s
 
 
 # E. not_bad
@@ -37,23 +41,40 @@ def verbing(count):
 
 
 def not_bad(s):
-    # your code here
-    return
+    string_not = s.find('not')
+    string_bad = s.find('bad')
+    if string_bad > string_not:
+        s = s.replace(s[string_not:(string_bad+3)], 'good')
+    return s
 
-
-# F. front_back
-# Consider dividing a string into two halves.
-# If the length is even, the front and back halves are the same
-# length. If the length is odd, we'll say that the extra
-# character goes in the front half.
-#   e.g. 'abcde', the front half is 'abc', the back half 'de'.
-# Given 2 strings, a and b, return a string of the form:
-#   a-front + b-front + a-back + b-back
+    # F. front_back
+    # Consider dividing a string into two halves.
+    # If the length is even, the front and back halves are the same
+    # length. If the length is odd, we'll say that the extra
+    # character goes in the front half.
+    #   e.g. 'abcde', the front half is 'abc', the back half 'de'.
+    # Given 2 strings, a and b, return a string of the form:
+    #   a-front + b-front + a-back + b-back
 
 
 def front_back(a, b):
-    # your code here
-    return
+    if len(a) % 2 == 0:
+        a_string_index = len(a) // 2
+    else:
+        a_string_index = (len(a) // 2) + 1
+
+    if len(b) % 2 == 0:
+        b_string_index = len(b) // 2
+    else:
+        b_string_index = (len(b) // 2) + 1
+
+    a_front = a[0:a_string_index]
+    a_back = a[a_string_index:]
+
+    b_front = b[0:b_string_index]
+    b_back = b[b_string_index:]
+
+    return a_front + b_front + a_back + b_back
 
 
 # Provided simple test() function used in main() to print
